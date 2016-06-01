@@ -1,4 +1,4 @@
-package com.typeof.gymbuddy.textviews;
+package com.typeof.gymbuddy.customfonts.textviews;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -8,31 +8,33 @@ import android.widget.TextView;
 import com.typeof.gymbuddy.helpers.FontCache;
 
 /**
- * Custom font for text view
+ * Gymbuddy
+ * Group 22
+ * Created on 16-06-01.
  */
-public class MerriweatherTextView extends TextView {
-
-    public MerriweatherTextView(Context context) {
+public class MontserratTextView extends TextView {
+    public MontserratTextView(Context context) {
         super(context);
 
         applyCustomFont(context);
     }
 
-    public MerriweatherTextView(Context context, AttributeSet attributeSet) {
+    public MontserratTextView(Context context, AttributeSet attributeSet) {
         super(context, attributeSet);
 
         applyCustomFont(context);
     }
 
-    public  MerriweatherTextView(Context context, AttributeSet attributeSet, int defStyle) {
+    public MontserratTextView(Context context, AttributeSet attributeSet, int defStyle) {
         super(context, attributeSet, defStyle);
 
         applyCustomFont(context);
     }
 
     private void applyCustomFont(Context context) {
-        Typeface customFont = FontCache.getTypeface("fonts/Merriweather/Merriweather-LightItalic.ttf", context);
+        Typeface customFont = FontCache.getTypeface("fonts/Montserrat/Montserrat-Bold.ttf", context);
 
         setTypeface(customFont);
     }
+
 }

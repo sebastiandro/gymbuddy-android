@@ -18,43 +18,85 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        >
+        android:layout_marginTop="15dp">
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
-            <com.typeof.gymbuddy.textviews.MerriweatherTextView
+            <com.typeof.gymbuddy.customfonts.textviews.MerriweatherTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Find a spotter with"
                 android:textColor="@color/textColor"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textIsSelectable="true"
+                android:shadowColor="@color/textShadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textSize="20sp"/>
 
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <TextView
+
+            <com.typeof.gymbuddy.customfonts.textviews.MontserratTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="GYMBUDDY"
                 android:textColor="@color/textColor"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="40sp"
+                android:layout_marginBottom="10dp"
+                android:shadowColor="@color/textShadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textStyle="bold"/>
+
         </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <TextView
+            <com.typeof.gymbuddy.customfonts.textviews.ProximaNovaTextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/textColor"
                 android:text="We believe “work” and “fun” can get along, afterall. So we'll make sure the experience you have with."
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:paddingLeft="10dp"
+                android:shadowColor="@color/textShadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:paddingRight="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+            <com.typeof.gymbuddy.customfonts.buttons.MontserratButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FIND GYM"
+                android:background="@drawable/rounded_btn"
+                android:shadowColor="@color/colorPrimaryDarker"
+                android:shadowDx="0"
+                android:shadowDy="5"
+                android:shadowRadius="1"
+                android:minWidth="150dp"
+                android:textColor="@color/textColor"
+
+                android:id="@+id/findGymButton"/>
         </RelativeLayout>
     </LinearLayout>
-
-
 </RelativeLayout>

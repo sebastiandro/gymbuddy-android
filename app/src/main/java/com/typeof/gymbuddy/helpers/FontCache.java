@@ -18,6 +18,7 @@ public class FontCache {
             try {
                 typeface = Typeface.createFromAsset(context.getAssets(), fontName);
             } catch (Exception e) {
+                e.printStackTrace();
                 return null;
             }
 
